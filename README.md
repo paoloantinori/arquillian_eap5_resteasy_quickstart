@@ -26,8 +26,10 @@ With JBoss already running: from command line you can execute normal Maven steps
 With JBoss already running:  
 If you want to execute the Arquillian/JUnit tests directly in eclipse a jvm command line variable has to be passed to the test launch configuration:  
 > -Djava.security.auth.login.config=src/test/resources/auth.conf    
+
 I have added an Eclipse Launch profile with the source code:  
 > Arq_EAP5.launch    
+
 That should apply the configuration automatically for you and offer a launch profile called Arq_EAP5
 
 
