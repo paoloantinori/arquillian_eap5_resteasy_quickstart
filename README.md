@@ -12,8 +12,8 @@ This is a very simple quickstart to show how to deploy and test an Arquillian te
 
 ## Configuration instructions: 
 
-- In *EAP_EXTRACT_PATH/jboss-eap-5.1/jboss-as/ create a copy of *server/default* folder to *server/arq_resteasy*
-- Edit *EAP_EXTRACT_PATH/jboss-eap-5.1/jboss-as/server/arq_resteasy/conf/props/jmx-console-users.properties* and enable admin user (remove the leading hash)
+- In *EAP_EXTRACT_PATH/jboss-eap-5.1/jboss-as/* create a copy of *server/default* folder to *server/arq_resteasy*
+- Edit *EAP_EXTRACT_PATH/jboss-eap-5.1/jboss-as/server/arq_resteasy/conf/props/jmx-console-users.properties* and enable **admin** user (remove the leading hash)
 - Copy RestEasy libraries from *EAP_EXTRACT_PATH/jboss-eap-5.1/resteasy/lib/* to *EAP_EXTRACT_PATH/jboss-eap-5.1/jboss-as/server/arq_resteasy/lib*
 - Start EAP 5 with the just created profile: 
 > sh EAP_EXTRACT_PATH/jboss-eap-5.1/jboss-as/bin/run.sh -c arq_resteasy
@@ -24,12 +24,12 @@ With JBoss already running: from command line you can execute normal Maven steps
 
 ## Run in Eclipse  
 With JBoss already running:  
-If you want to execute the Arquillian/JUnit tests directly in eclipse a jvm command line variable has to be passed to the test launch configuration:
-> -Djava.security.auth.login.config=src/test/resources/auth.conf  
-I have added an Eclipse Launch profile with the source code:
-> Arq_EAP5.launch  
+If you want to execute the Arquillian/JUnit tests directly in eclipse a jvm command line variable has to be passed to the test launch configuration:  
+> -Djava.security.auth.login.config=src/test/resources/auth.conf    
+I have added an Eclipse Launch profile with the source code:  
+> Arq_EAP5.launch    
 That should apply the configuration automatically for you and offer a launch profile called Arq_EAP5
 
 
-paolo
+paolo  
 paolo.antinori@gmail.com
