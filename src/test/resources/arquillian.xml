@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arquillian xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://jboss.org/schema/arquillian"
+	xsi:schemaLocation="http://jboss.org/schema/arquillian http://jboss.org/schema/arquillian/arquillian_1_0.xsd">
+
+	<!-- option to save also the temporary archive created by arquillian -->
+	<engine>
+		<property name="deploymentExportPath">target</property>
+	</engine>
+
+	<!-- configuration need to let arquillian authenticate and deploy on the remote EAP instance -->
+	<container qualifier="jboss-eap-5.1" default="true">
+		<configuration>
+			<property name="contextFactory">org.jboss.security.jndi.LoginInitialContextFactory</property>
+		</configuration>
+	</container>
+
+</arquillian>
