@@ -32,6 +32,10 @@ I have added an Eclipse Launch profile with the source code:
 
 That should apply the configuration automatically for you and offer a launch profile called Arq_EAP5
 
+## References  
+http://howtojboss.com/2012/03/14/integration-testing-w-maven-arquillian-jboss-eap-5/  
+https://docs.jboss.org/author/display/ARQ/JBoss+EAP+5.1+-+Remote  
+
 
 paolo  
 paolo.antinori@gmail.com
