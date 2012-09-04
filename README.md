@@ -16,7 +16,7 @@ This is a very simple quickstart to show how to deploy and test an Arquillian te
 - Edit *EAP_EXTRACT_PATH/jboss-eap-5.1/jboss-as/server/arq_resteasy/conf/props/jmx-console-users.properties* and enable **admin** user (remove the leading hash)
 - Copy RestEasy libraries from *EAP_EXTRACT_PATH/jboss-eap-5.1/resteasy/lib/* to *EAP_EXTRACT_PATH/jboss-eap-5.1/jboss-as/server/arq_resteasy/lib*
 - Start EAP 5 with the just created profile:
-- 
+
 > sh EAP_EXTRACT_PATH/jboss-eap-5.1/jboss-as/bin/run.sh -c arq_resteasy
 
 ## MVN  
